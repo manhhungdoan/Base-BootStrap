@@ -1,0 +1,15 @@
+//Custom variables
+$primary: red;
+$light: rgb(255, 255, 242);
+
+@import "../node_modules/bootstrap/scss/_functions";
+@import "../node_modules/bootstrap/scss/_variables";
+
+$custom-color: (
+    'altlight': #f2ebfa,
+    'altdark': #e1caff
+);
+$theme-colors: map-merge($custom-color, $theme-colors);
+//import bootstrap
+
+@import '../node_modules/bootstrap/scss/bootstrap';
